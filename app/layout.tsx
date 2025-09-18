@@ -6,7 +6,7 @@ import './styles/globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-	title: 'Locomotive Depot',
+	title: 'Locomotiv Depo',
 	description: 'Lokomotiv Depo rasmiy sayti',
 }
 

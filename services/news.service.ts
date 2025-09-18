@@ -44,7 +44,6 @@ export const getNewsDetails = async (slug: string) => {
 	const { news } = await request<{ news: INews[] }>(graphqlAPI, query, {
 		slug,
 	})
-	console.log(news)
 
 	return news
 }

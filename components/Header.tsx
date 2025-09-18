@@ -9,6 +9,7 @@ const navLinks = [
 	{ href: '/services', label: 'Xizmatlar' },
 	{ href: '/news', label: 'Yangiliklar' },
 	{ href: '/leadership', label: 'Rahbariyat' },
+	{ href: 'https://e-ticket.railway.uz', label: 'Bilet olish' },
 	{ href: '/contact', label: 'Aloqa' },
 ]
 
@@ -53,12 +54,12 @@ export default function Header() {
 
 			{/* Mobile menu */}
 			{open && (
-				<div className='md:hidden bg-white border-t p-4 space-y-3'>
+				<div className='md:hidden bg-white border-t p-4 space-y-3 absolute top-17 w-full'>
 					{navLinks.map(link => (
 						<Link
 							key={link.href}
 							href={link.href}
-							className='block'
+							className='block hover:bg-slate-500'
 							onClick={() => setOpen(false)}
 						>
 							{link.label}
